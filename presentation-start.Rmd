@@ -1,0 +1,106 @@
+---
+title: "kaggle workshop"
+author: "Lorenz Walthert (@lorenzwalthert)"
+date: "April 13, 2019"
+output:
+  ioslides_presentation: default
+  beamer_presentation: default
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(cache = FALSE)
+```
+
+## Today's plan (tentative)
+
+* introduction, getting ready (10.00 - 10.30)
+* coding block 1 (10.30 - 12.30)
+* lunch break (12.30 - 13.30)
+* insights / sharing / discussion (13.30 - 14.00)
+* coding block 2 (14.00 - 15.30)
+* final discussion (15.30 - 16.00)
+
+## Introduction 
+
+* About me
+* Goals of today
+* How to approach this
+* Competition 
+
+## About me
+
+* former sfs student.
+* participated in the kaggle days in Poland last year.
+* solved today's competition already (so I can mentor).
+
+## Goals of today
+
+Under (extreme) time constraints, 
+
+* get a feel of the data (exploratory data analysis).
+* ask the right questions.
+* come up with smart features.
+* tune a model.
+* summarize and present your findings (optional).
+
+This might be a typical data science job interview situation.
+
+Also, this is about learning and improving, not about competing. Collaborate, 
+share, learn and have fun together.
+
+* Please sign up with slack and follow the invitation I sent you.
+
+## How to approach today (Data side)
+
+Understand the data: 
+
+* existing features.
+* new features (depends on algorithm, e.g. trees can't combine linearly).
+* balanced data?
+* missing values.
+* outliers. 
+* etc.
+
+-> Exploratory data analysis
+
+## How to approach today (Algorithm side) 
+
+Understanding the algorithms
+
+* choose a programming language (e.g. R or python)
+* choose an algorithm (kaggle tip: xgboost or light gbm for tabular data)
+* choose a framework (xgboost, sklearn, mlr, tidymodels). Re-implementation or 
+  just wrapper?
+* choose a cross-validation scheme (e.g. 10-Fold cv)
+* choose tuning parameters and tune.
+
+## Tipps
+
+
+* Work iteratively. Get a first prediction early.
+* you don't have enough time to do everything. Explicitly make trade-off 
+  decisions.
+* Code nice enought that you don't get a mess, quick enough to get finish a 
+  model.
+* high-level vs. low-level frameworks. High-level: few lines of code, quick. 
+  Low-level: Many lines, customizable (example: early-stopping callbaks xgboost).
+* choose a standard directory structure, coding style (tidyverse or PEP8), other
+  conventions.
+
+## Tips
+
+* workflow: estimate model with train data (e.g. cross validation) for different 
+  hyper parameters. Re-it best model with all training data. Predict on test 
+  data.
+* Combine different learners (time consuming): Stacking, bagging, 
+  averaging. Giba's material (see slack).
+
+## Competition
+
+* Predict Reddit up-votes for answers of Reddit posts.
+* see Reddit.com 
+* get data and information here: https://www.kaggle.com/c/kaggledays
+* ignore leak records for now. 
+* you can't submit because it's in-class. It does not matter, use test and train 
+ and add your score here: http://bit.ly/offline-Reddit-leaderboard. Fair play.
+ 
