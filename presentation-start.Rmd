@@ -3,8 +3,8 @@ title: "kaggle workshop"
 author: "Lorenz Walthert (@lorenzwalthert)"
 date: "April 13, 2019"
 output:
-  ioslides_presentation: default
   beamer_presentation: default
+  ioslides_presentation: default
 ---
 
 ```{r, echo = FALSE}
@@ -102,5 +102,5 @@ Understanding the algorithms
 * get data and information here: https://www.kaggle.com/c/kaggledays
 * ignore leak records for now. 
 * you can't submit because it's in-class. It does not matter, use test and train 
- and add your score here: http://bit.ly/offline-Reddit-leaderboard. Fair play.
+ and add your score here: http://bit.ly/offline-reddit-leaderboard. Fair play.
  
